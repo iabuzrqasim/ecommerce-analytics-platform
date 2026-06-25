@@ -1,8 +1,9 @@
 import pandas as pd
 from sqlalchemy import create_engine
 import os
+
 # MySQL connection
-engine = create_engine('mysql+pymysql://root:root123@localhost/ecommerce_db')
+engine = create_engine('mysql+pymysql://root: Password@localhost/ecommerce_db')
 
 try:
     with engine.connect() as conn:
