@@ -1,6 +1,6 @@
 import pandas as pd
 from sqlalchemy import create_engine
-
+import os
 # MySQL connection
 engine = create_engine('mysql+pymysql://root:root123@localhost/ecommerce_db')
 
@@ -11,7 +11,8 @@ except Exception as e:
     print(f"Error: {e}")
     exit()
 
-path = 'C:/Users/SAEECOMPUTER/Downloads/ecommerce_db/'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+path = os.path.join(BASE_DIR, 'dataset') + os.sep
 
 # Load CSV files
 orders = pd.read_csv(path + 'olist_orders_dataset.csv')

@@ -1,6 +1,4 @@
--- E-Commerce Sales Analysis
--- Dataset: Brazilian E-Commerce (Olist)
--- Author: ABUZAR Qasim
+
 
 USE ecommerce_db;
 
